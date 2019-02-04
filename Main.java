@@ -1,29 +1,13 @@
-import java.util.Scanner;
+package com.company;
+
+   public static void main(String[] args){
+        Calculator calculator = new Calculator();
+        int a = calculator.getNumb();
+        int b = calculator.getNumb();
+        calculator.getSum();
+        calculator.getDif();
+        calculator.getMul();
+        calculator.getDiv();
+   }
 
 
-public class Main {
-
-    public static void main(String[] args) {
-
-       Scanner sc = new Scanner(System.in);
-        System.out.println("Enter first number:");
-        if (sc.hasNextInt()) {
-            int a = sc.nextInt();
-
-          // System.out.println("You have entered " + number);
-        } else {
-            System.out.println("It is not a number! Please, enter a number.");
-        }
-
-        System.out.println("Enter second number:");
-        if (sc.hasNextInt()) {
-            int b = sc.nextInt();
-
-          //  System.out.println("You have entered " + number);
-        } else {
-            System.out.println("It is not a number! Please, enter a number.");
-        }
-
-        sc.close();
-    }
-}
